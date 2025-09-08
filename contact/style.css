@@ -186,7 +186,7 @@ nav a.active-link::before {
 }
 }
  
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -229,7 +229,7 @@ nav a.active-link::before {
   z-index: -1; 
 }
   .main-content {
-    padding: 50px 50px;
+    padding: 50px 40px;
   }
 
   .intro-section {
@@ -286,6 +286,6 @@ nav a.active-link::before {
   .bottom-section {
     display: none;
   }
-
 }
+
 
