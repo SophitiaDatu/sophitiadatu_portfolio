@@ -245,7 +245,7 @@ nav a.active-link::before {
 
   .intro-right {
     text-align: left;
-    margin-bottom: 60px;  
+    margin-bottom: 30px;  
   }
 
   .intro-right ul {
@@ -295,6 +295,7 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
 
