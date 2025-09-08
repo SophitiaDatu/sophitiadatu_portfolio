@@ -52,7 +52,7 @@ nav a.active-link {
 nav a.active-link::before {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%); 
   width: 102px;
@@ -287,5 +287,6 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
