@@ -262,7 +262,13 @@ nav a.active-link::before {
 }
 
 .intro-right a {
-  font-size: 1.2rem; 
+  display: flex;
+  align-items: center;  /* vertically center text and icons */
+  gap: 8px;              /* small horizontal space between items */
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .intro-right img.icon-left,
@@ -289,6 +295,7 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
 
