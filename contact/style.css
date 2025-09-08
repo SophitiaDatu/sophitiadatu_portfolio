@@ -283,7 +283,7 @@ nav a.active-link::before {
   }
 
   .intro-text h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .message-icon {
@@ -295,6 +295,7 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
 
