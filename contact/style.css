@@ -258,10 +258,11 @@ nav a.active-link::before {
 .intro-right li {
   flex: 1 1 45%;
   margin: 0;
+  justify-content: center;
 }
 
 .intro-right a {
-  font-size: .9rem; 
+  font-size: 1.2rem; 
 }
 
 .intro-right img.icon-left,
@@ -288,6 +289,7 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
 
