@@ -142,7 +142,7 @@ nav a.active-link::before {
 
 .intro-text h1 {
   margin: 0px 0px 0px 0px;
-  font-size: 50px;
+  font-size: 30px;
   font-family: "museo-sans-rounded", sans-serif;
   font-weight: 700;
 }
@@ -295,6 +295,7 @@ nav a.active-link::before {
     display: none;
   }
 }
+
 
 
 
