@@ -219,7 +219,7 @@ nav a.active-link::before {
 nav a.active-link::before {
   content: "";
   position: absolute;
-  top: 36%;
+  top: 35%;
   left: 47%;
   transform: translate(-50%, -50%); 
   width: 200px;
@@ -339,6 +339,7 @@ nav a.active-link::before {
   padding-bottom: 0px;
 }
 }
+
 
 
 
