@@ -248,7 +248,7 @@ nav a.active-link::before {
   text-align: left;
   margin-bottom: 30px;
 }
-
+  
 .intro-right ul {
   list-style: none;
   padding: 0;
@@ -262,8 +262,13 @@ nav a.active-link::before {
   overflow: hidden;    
   width: 100%;         
   box-sizing: border-box;
+  transition: 0.3s ease;
 }
-
+  
+.intro-right li:hover {
+  background-color: #a4c8ff; 
+}
+  
 .intro-right a {
   display: flex;
   align-items: center;
@@ -334,6 +339,7 @@ nav a.active-link::before {
   padding-bottom: 0px;
 }
 }
+
 
 
 
