@@ -142,7 +142,7 @@ nav a.active-link::before {
 
 .intro-text h1 {
   margin: 0px 0px 0px 0px;
-  font-size: 30px;
+  font-size: 50px;
   font-family: "museo-sans-rounded", sans-serif;
   font-weight: 700;
 }
@@ -189,10 +189,9 @@ nav a.active-link::before {
 @media screen and (max-width: 480px) {
   header {
     flex-direction: column;
-    align-items: center;
     top: auto;
+    align-items: center;
     padding: 15px 80px 15px 80px;
-    border-bottom: .9px solid #b7b6b4;
   }
 
   .logo {
@@ -220,7 +219,7 @@ nav a.active-link::before {
 nav a.active-link::before {
   content: "";
   position: absolute;
-  top: 34%;
+  top: 38%;
   left: 47%;
   transform: translate(-50%, -50%); 
   width: 200px;
@@ -244,28 +243,30 @@ nav a.active-link::before {
     margin-bottom: 30px;
   }
 
-  .intro-right {
-    text-align: left;
-    margin-bottom: 30px;  
-  }
+.intro-right {
+  text-align: left;
+  margin-bottom: 30px;  
+}
 
-  .intro-right ul {
+.intro-right ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px 34px; /* slightly larger gap */
+  flex-direction: column;   /* stack links vertically */
+  gap: 0px;                /* spacing between each box */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .intro-right li {
-  flex: 1 1 45%;
-  margin: 0;
-  justify-content: center;
+  border: .5px solid #b7b6b4;   /* individual outlined border */
+  border-radius: 25px;       /* optional rounded corners */
+  padding: 12px 130px 12px 12px;       /* inner spacing */
 }
 
 .intro-right a {
   display: flex;
-  align-items: center;  /* vertically center text and icons */
-  gap: 8px;              /* small horizontal space between items */
+  align-items: center; 
+  gap: 8px;              
   text-decoration: none;
   color: #333;
   font-weight: 600;
@@ -284,7 +285,7 @@ nav a.active-link::before {
   }
 
   .intro-text h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .message-icon {
@@ -293,14 +294,23 @@ nav a.active-link::before {
   }
 
   .bottom-section {
-    display: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
   }
+
+  .bottom-left {
+    font-size: 12px;
+      padding-top: 30px;
+          padding-bottom: 0px;
+      margin-bottom: 0px;
 }
-
-
-
-
-
+  .bottom-right {
+  margin-top: 0px;
+          padding-bottom: 0px;
+}
+}
 
 
 
