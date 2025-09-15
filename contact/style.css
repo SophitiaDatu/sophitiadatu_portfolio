@@ -192,6 +192,7 @@ nav a.active-link::before {
     top: auto;
     align-items: center;
     padding: 15px 80px 15px 80px;
+    border-bottom: 1.4px solid #b7b6b4;
   }
 
   .logo {
@@ -219,7 +220,7 @@ nav a.active-link::before {
 nav a.active-link::before {
   content: "";
   position: absolute;
-  top: 38%;
+  top: 36%;
   left: 47%;
   transform: translate(-50%, -50%); 
   width: 200px;
@@ -329,13 +330,13 @@ nav a.active-link::before {
   .bottom-left {
     font-size: 12px;
       padding-top: 30px;
-          padding-bottom: 0px;
+      padding-bottom: 0px;
       margin-bottom: 0px;
 
 }
   .bottom-right {
   margin-top: 0px;
-          padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 }
 
