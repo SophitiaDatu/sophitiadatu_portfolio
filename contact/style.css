@@ -6,7 +6,8 @@ body {
   font-variation-settings: "wght" 100;
   background-color: hsl(60, 31%, 93%);
 }
-  
+
+/* Header */
 header {
   position: sticky;
   top: 0;
@@ -75,7 +76,7 @@ nav a.active-link::before {
 }
 
 .intro-left {
-  flex: 2;
+  flex: .8;
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
@@ -89,35 +90,55 @@ nav a.active-link::before {
 }
 
 .intro-right {
-  flex: 1;
+  flex: 0;
   text-align: right;
 }
 
 .intro-right ul {
-  font-size: .8rem;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .intro-right li {
-  margin: 8px 0;
+  margin: 2px 0;
+  border-radius: 25px;
+}
+
+.intro-right li:hover {
+  background-color: #a4c8ff; 
 }
 
 .intro-right a {
+  display: flex;
+  align-items: center;            
+  justify-content: space-between; 
+  padding: 6px 12px;              
   text-decoration: none;
-  font-weight: 600;
   color: #333;
-  transition: color 0.3s;
+  font-weight: 600;
+  font-size: 0.7rem;              
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.intro-right a:hover {
-  color: #0073e6; /* highlight on hover */
+.intro-right .left-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;                     
+  flex-shrink: 0;
 }
 
-.intro-right img {
-  width: 12x;
-  height: 12px;
+.intro-right img.icon-left {
+  width: 16px;                     
+  height: 16px;
+}
+
+.intro-right img.icon-right {
+  width: 14px;                     
+  height: 14px;
+  margin-left: 2px;           
+  flex-shrink: 0;
 }
 
 
@@ -165,7 +186,7 @@ nav a.active-link::before {
 }
 
 .message-icon-wrapper:hover .message-icon {
-  content: url('envelope-07.png'); /* ← path to hover version */
+  content: url('envelope-07.png'); 
 }
 
 .message-text {
@@ -191,7 +212,7 @@ nav a.active-link::before {
     top: auto;
     align-items: center;
     padding: 15px 80px 15px 80px;
-    border-bottom: 1px solid #b7b6b4;
+    border-bottom: 1.4px solid #b7b6b4;
   }
 
   .logo {
@@ -233,47 +254,48 @@ nav a.active-link::before {
     padding: 50px 40px;
   }
 
-.intro-section {
-  flex-direction: column;
-  gap: 30px;
-}
+  .intro-section {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-  .intro-section p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+   .intro-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 
 .intro-right {
-  width: 100%;       
+  width: 100%;         
   text-align: left;
   margin-bottom: 30px;
 }
-  
+
 .intro-right ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+
 .intro-right li {
-  border: 1px solid #b7b6b4;
+  border: 0.5px solid #b7b6b4;
   border-radius: 25px;
   margin-bottom: 12px;
-  overflow: hidden;    
-  width: 100%;         
+  overflow: hidden;      
+  width: 100%;          
   box-sizing: border-box;
   transition: 0.3s ease;
 }
-  
+
 .intro-right li:hover {
   background-color: #a4c8ff; 
 }
-  
+
 .intro-right a {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* left content stays left, arrow goes right */
-  padding: 12px 18px;             /* space inside the border */
+  justify-content: space-between;
+  padding: 12px 18px;            
   text-decoration: none;
   color: #333;
   font-weight: 600;
@@ -282,14 +304,12 @@ nav a.active-link::before {
   box-sizing: border-box;
 }
 
-/* Left side: icon + text */
 .intro-right .left-content {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* Fixed icon sizes */
 .intro-right img.icon-left {
   width: 24px;
   height: 24px;
@@ -299,6 +319,7 @@ nav a.active-link::before {
   width: 18px;
   height: 18px;
 }
+
 .intro-right a:hover {
   background: rgba(0,0,0,0.03);
   color: #000;
@@ -307,7 +328,6 @@ nav a.active-link::before {
   .intro-text {
     padding: 80px 35px; 
     margin-top: 50;
-    border: 1px solid #b7b6b4;
   }
 
   .intro-text h1 {
@@ -319,23 +339,37 @@ nav a.active-link::before {
     height: 66px;
   }
 
-  .bottom-section {
+.bottom-section {
   display: flex;
-  flex-direction: column; 
-  align-items: center;
-
-  }
-
-  .bottom-left {
-    font-size: 12px;
-      padding-top: 30px;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-
+  flex-direction: column;
+  align-items: center; 
+  gap: 5px;
+  padding: 0;
+  width: 100%; 
 }
-  .bottom-right {
-  margin-top: 0px;
-  padding-bottom: 0px;
+
+.bottom-left {
+  display: none;
+}
+
+.bottom-right {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 12px;
+  text-align: center; 
+  width: 100%;
+}
+
+.bottom-right::before {
+  content: "";
+  display: block;
+  width: 95%;                  
+  max-width: 400px;              
+  height: 1px;
+  background-color: #b7b6b4;
+  margin: 30px auto 5px auto;       
 }
 }
 
