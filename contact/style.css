@@ -6,8 +6,7 @@ body {
   font-variation-settings: "wght" 100;
   background-color: hsl(60, 31%, 93%);
 }
-
-/* Header */
+  
 header {
   position: sticky;
   top: 0;
@@ -192,7 +191,7 @@ nav a.active-link::before {
     top: auto;
     align-items: center;
     padding: 15px 80px 15px 80px;
-    border-bottom: 1.4px solid #b7b6b4;
+    border-bottom: 1px solid #b7b6b4;
   }
 
   .logo {
@@ -202,7 +201,7 @@ nav a.active-link::before {
 
   nav {
     display: flex;
-    flex-direction: row; /* Keep nav links in a row */
+    flex-direction: row; 
     gap: 60px;
     padding-top: 0px;
   }
@@ -234,18 +233,18 @@ nav a.active-link::before {
     padding: 50px 40px;
   }
 
-  .intro-section {
-    flex-direction: column;
-    gap: 30px;
-  }
+.intro-section {
+  flex-direction: column;
+  gap: 30px;
+}
 
-   .intro-section p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
+  .intro-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
 
 .intro-right {
-  width: 100%;            /* constrained by main-content padding/margins */
+  width: 100%;       
   text-align: left;
   margin-bottom: 30px;
 }
@@ -256,23 +255,21 @@ nav a.active-link::before {
   margin: 0;
 }
 
-/* each row: border respects the container width (not the viewport) */
 .intro-right li {
   border: 0.5px solid #b7b6b4;
   border-radius: 25px;
   margin-bottom: 12px;
-  overflow: hidden;      /* keeps contents inside rounded border */
-  width: 100%;           /* fills parent .intro-right width (i.e. page margins) */
+  overflow: hidden;    
+  width: 100%;         
   box-sizing: border-box;
 }
 
-/* link fills the row, text left, arrow right */
 .intro-right a {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* arrow pushed to the far right inside the border */
+  justify-content: space-between; 
   width: 100%;
-  padding: 12px 18px;    /* comfortable inner spacing */
+  padding: 12px 18px;
   box-sizing: border-box;
   text-decoration: none;
   color: #333;
@@ -280,19 +277,16 @@ nav a.active-link::before {
   font-size: 1.05rem;
 }
 
-/* left side group (icon + label) */
 .intro-right .left-content {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
-/* keep icon sizes fixed so they don't scale unexpectedly */
 .intro-right img.icon-left {
   width: 24px;
   height: 24px;
-  flex: 0 0 24px;       /* don't shrink/grow */
+  flex: 0 0 24px;       
 }
 
 .intro-right img.icon-right {
@@ -339,6 +333,7 @@ nav a.active-link::before {
   padding-bottom: 0px;
 }
 }
+
 
 
 
