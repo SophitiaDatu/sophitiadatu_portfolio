@@ -272,32 +272,32 @@ nav a.active-link::before {
 .intro-right a {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  width: 100%;
-  padding: 12px 18px;
-  box-sizing: border-box;
+  justify-content: space-between; /* left content stays left, arrow goes right */
+  padding: 12px 18px;             /* space inside the border */
   text-decoration: none;
   color: #333;
   font-weight: 600;
   font-size: 1.05rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Left side: icon + text */
 .intro-right .left-content {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* Fixed icon sizes */
 .intro-right img.icon-left {
   width: 24px;
   height: 24px;
-  flex: 0 0 24px;       
 }
 
 .intro-right img.icon-right {
   width: 18px;
   height: 18px;
-  flex: 0 0 18px;
 }
 
 .intro-right a:hover {
@@ -339,6 +339,7 @@ nav a.active-link::before {
   padding-bottom: 0px;
 }
 }
+
 
 
 
