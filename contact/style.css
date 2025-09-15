@@ -299,7 +299,6 @@ nav a.active-link::before {
   width: 18px;
   height: 18px;
 }
-
 .intro-right a:hover {
   background: rgba(0,0,0,0.03);
   color: #000;
@@ -339,6 +338,7 @@ nav a.active-link::before {
   padding-bottom: 0px;
 }
 }
+
 
 
 
